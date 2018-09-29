@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2018.09.28
  */
 @RestController
-@CrossOrigin({"http://localhost:4000", "http://shuai-meng.github.io/"})
+@CrossOrigin({"http://localhost:4000", "http://shuai-meng.github.io"})
 public class VisitController {
     @Autowired
     private VisitService visitService;
