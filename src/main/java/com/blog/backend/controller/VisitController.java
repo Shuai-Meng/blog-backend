@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author mengshuai
+ * @since 2018.09.28
  */
 @RestController
 @CrossOrigin({"http://localhost:4000", "http://shuai-meng.github.io/"})
@@ -18,7 +19,7 @@ public class VisitController {
     private VisitService visitService;
 
     @GetMapping("/getBlogVisit")
-    public Integer getBlogVisit() {
+    public Long getBlogVisit() {
         return visitService.getVisitForBlog();
     }
 
