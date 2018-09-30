@@ -38,6 +38,7 @@ public class VisitService {
             postVisit = list.get(0);
             original = postVisit.getVisit();
             postVisit.setVisit(original + 1);
+            postVisitMapper.updateByExampleSelective(postVisit, postVisitExample);
         }
 
         addBlogVisit();
